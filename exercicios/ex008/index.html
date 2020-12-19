@@ -3,33 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Outras Formatações</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Formatação de Textos</title>
+    <style>
+        mark {
+            background-color: rgb(123, 253, 123);
+        }
+    </style>
 </head>
 <body>
-    <h1>Outras Formatações</h1>
-    <h2>Código-fonte exemplo de uso da tag &lt;pre&gt; e &lt;code&gt;</h2>
-    <pre>
-        <code>
-        n = int(input('Digite um numero: '))
-        if n % 2 == 0:
-            print(f'O numero {n} é par')
-        else:
-            print(f'O numero {n} é ímpar')
-        </code>
-    </pre>
-
-    <h2>Citação simples com tag &lt;q&gt;</h2>
-    <p>Como diria o pai de um amigo: <q>O computador é um burro muito rapido.</q></p>
+    <h1>Principais formatações</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>Nesta frase temos um <b>termo em negrito</b> usando a tag B (não semântica).</p>
+    <p>Nesta frase, tenho um <strong>termo em destaque</strong> usando a tag STRONG (semântica).</p>
+    <h2>Itálico / Ênfase</h2>
+    <p>Nesta frase, temos um <i>termo em itálico</i> usando a tag I (não semântica).</p>
+    <p>Nesta frase, temos um <em>termo em ênfase</em> usando a tag EM (semântica).</p>
+    <h2>Texto marcado</h2>
+    <p>Podemos criar também <mark>um texto marcado</mark> usando a tag MARK.</p>
+    <p>E no outro parágrafo, temos <mark>outro texto marcado</mark> no final.</p>
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> nesse parágrafo. Mas a tag &lt;big&gt; morreu no HTML 5, Enquanto a tag &lt;small&gt; continua.</p>
+    <h2>Texto deletado</h2>
+    <p>Podemos marcar <del>um texto como excluído</del> para indicar que ele deve ser lido, mas não considerado.</p>
+    <h2>Texto inserido</h2>
+    <p>Podemos marcar <ins>um texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois.</p>
+    <p>Existe também o <u>sublinhado</u> com a tag U (não semântica)</p>
+    <h2>Texto sobrescrito</h2>
+    <p>Para inserir coisas do tipo 2<sup>10</sup> = 1024</p>
+    <h2>Texto subscrito</h2>
+    <p>Para inserir coisas do tipo H<sub>2</sub>O</p>    
     
-    <h2>Citações completas com tag &lt;blockquote&gt;</h2>
-    <p>Segundo Jeff Noble, no seu livro HTML para Leigos:</p>
-    <blockquote>A diferença entre elementos inline e um bloco de texto é importante. Os elementos HTML neste capítulo descrevem os blocos de texto.</blockquote>
-
-    <h2>Abreviações com tag &lt;abbr&gt;</h2>
-    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr> e estou gostando.</p>
-
-    <h2>Texto invertido com tag &lt;bdo&gt;</h2>
-    <bdo dir="rtl">Texto invertido com tag &lt;bdo&gt;</bdo>
 </body>
 </html>

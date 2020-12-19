@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras Formatações</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Outras Formatações</h1>
+    <h2>Código-fonte exemplo de uso da tag &lt;pre&gt; e &lt;code&gt;</h2>
+    <pre>
+        <code>
+        n = int(input('Digite um numero: '))
+        if n % 2 == 0:
+            print(f'O numero {n} é par')
+        else:
+            print(f'O numero {n} é ímpar')
+        </code>
+    </pre>
+
+    <h2>Citação simples com tag &lt;q&gt;</h2>
+    <p>Como diria o pai de um amigo: <q>O computador é um burro muito rapido.</q></p>
+    
+    <h2>Citações completas com tag &lt;blockquote&gt;</h2>
+    <p>Segundo Jeff Noble, no seu livro HTML para Leigos:</p>
+    <blockquote>A diferença entre elementos inline e um bloco de texto é importante. Os elementos HTML neste capítulo descrevem os blocos de texto.</blockquote>
+    <blockquote>Também podemos criar citações mais longas (em bloco) e que tenham um parágrafo
+        só para si. Nesse caso, colocaremos tudo dentro de <mark>&lt;blockquote&gt;  &lt;/blockquote&gt;</mark> e
+        o texto ganha um recuo automaticamente. Podemos também colocar um link para o
+        texto original, usando o parâmetro cite dentro da tag.</blockquote>
+    <h2>Abreviações com tag &lt;abbr&gt;</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr> e estou gostando.</p>
+
+    <h2>Texto invertido com tag &lt;bdo&gt;</h2>
+    <bdo dir="rtl">Texto invertido com tag &lt;bdo&gt;</bdo>
+</body>
+</html>
