@@ -1,0 +1,27 @@
+@charset "UTF-8";
+body{
+    background-color: #0a0a0ad3;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+h1{
+    text-align: center;
+    
+}
+.centro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;    
+    padding: 7px;
+    color: white;
+}
+.video{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 20px;
+    
+}
+
