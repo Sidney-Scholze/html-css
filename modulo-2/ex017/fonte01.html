@@ -6,12 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fontes em CSS</title>
     <style>
+
         body {
-            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+            /* 
+            Medidas absolutas
+            cm, mm ,in , px, pt, pc
+
+            Medidas relativas 
+            em, ex, rem, vw, vh, %
+
+            em = Medida relativa ao M maiúsculo de uma fonte
+            ex = Medida relativa a altura x da fonte
+            rem = Relativo ao tamanho que está configurado no body
+            vw = Relativo a largura da tela (viewport)
+            vh = Relativo a altura da tela (viewport)
+            
+            A W3C recomenda px e em para tamanhos de fontes
+            */
+            font-size: 1em;
         }
-        h1,h2{
-            font-family:'Times New Roman', Times, serif;
+        
+        h1{
+           /* font-family:'Times New Roman', Times, serif;*/
+           /*shorthand
+                font-style -> font-weight -> font-size -> font-family
+           */
+           font: italic bold 2em Verdana; 
         }
+
     </style>
 </head>
 <body>
