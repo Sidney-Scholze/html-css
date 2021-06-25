@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav {
+            background-color:lightslategray;
+            padding: 3px;
+        }
+        nav > a {
+            text-decoration: none;
+            padding-right: 10px;
+            color: white;
+        }
+        nav > a:hover {
+            background-color: black;
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        article {
+            background-color: lightgray;
+        }
+        article > aside {
+            background-color:grey
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            margin: 0px;
+            padding: 1px;
+        }
+    </style>
+</head>
+<body>
+    <header><!--Cabeçalho-->
+
+        <h1>Meu Site</h1> 
+
+        <nav><!--Links-->
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+
+    </header>
+
+    <main><!--Conteúdo principal-->
+        
+        <section id ="assuntos"><!--seção-->
+            
+        </section>
+        <section id="noticias"><!--seção-->
+
+            <article><!--Artigo como postagens de forum, blog e notícias-->
+                <h2>Noticias sobre...</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eaque earum laudantium quae ratione, facere atque ut minus. Placeat explicabo laborum fuga libero id ad eius cum officiis ex architecto!</p>
+
+                <aside><!--define algum conteúdo além do conteúdo em que é colocada, geralmente é colocado como uma barra lateral em um documento-->
+                    <p>Artigo escrito por mim...</p>
+                </aside>
+
+            </article>
+
+            <article><!--Artigo-->
+
+            </article>
+        
+        </section>
+
+    </main>
+
+    <footer><!--Rodapé-->
+        <p>Desenvolvido por SiD</p>
+    </footer>    
+
+
+</body>
+</html>
