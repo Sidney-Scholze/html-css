@@ -42,6 +42,7 @@ header > h1 {
   color: white;
   font-family: var(--fonte-destaque);
   font-size: 3em;
+  font-weight: normal;
   margin-bottom: 20px;
   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.4);
 }
@@ -54,6 +55,7 @@ header > p {
   padding-left: 10px;
   padding-right: 10px;
   margin: auto;
+  margin-bottom: 20px;
   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -89,6 +91,10 @@ main {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.473);
 }
 
+main a::after {
+  content: '\0020\1f517';
+}
+
 main h1 {
   color: var(--cor5);
   font-family: var(--fonte-android);
@@ -96,18 +102,81 @@ main h1 {
 
 main h2 {
   font-family: var(--fonte-android);
+  color: var(--cor4);
+  font-size: 1.2em;
+  border-bottom: 1px solid;
+  border-image: linear-gradient(90deg, var(--cor4), transparent) 1; 
+ 
+  text-indent: 8px;
 }
+
+main p {
+  margin: 15px 0px;
+  text-align: justify;
+  text-indent: 30px;
+  line-height: 1.4em;
+}
+
+main a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--cor3)
+}
+
+main a:hover {
+  text-decoration: underline;
+  color: var(--cor2)
+}
+
 main img {
   width: 100%;
 }
 
 main img.img-pq {
-  max-width: 50%;
+  max-width: 320px;
   display: block;
   margin: auto;
+}
+
+div.video {
+  margin-bottom: 30px;
+  margin: 0px -20px 30px -20px;
+  padding: 20px;
+  padding-bottom: 56.45%;
+  position: relative;
+}
+
+div.video > iframe {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+}
+
+aside {
+  background-color: var(--cor1);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.24);
+}
+aside h3 {
+  background-color: var(--cor4);
+  color: white;
+  padding: 10px;
+  margin: -10px -10px 0px -10px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+aside ul {
+  list-style-type: '\2714\0020\0020';
+  list-style-position: inside;
+  columns: 2;
 }
 
 footer {
   background-color: var(--cor5);
   color: white;
+  text-align: center;
+  font-size: 0.8em;
 }
