@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Query</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link rel="stylesheet" href="estilos/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Meu Site</h1>
+      <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+      <menu id="itens">
+        <ul>
+          <li><a href="#">Opção 1</a></li>
+          <li><a href="#">Opção 2</a></li>
+          <li><a href="#">Opção 3</a></li>
+          <li><a href="#">Opção 4</a></li>
+          <li><a href="#">Opção 5</a></li>
+        </ul>
+      </menu>
+    </header>
+    <main>
+      <article>
+        <h2>Testando Media Queries</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium
+          sed ipsam numquam! Culpa temporibus deleniti sit eveniet porro amet
+          velit iusto, ducimus tempora vero voluptatem necessitatibus illo eius
+          qui laboriosam!. Lorem ipsum dolor, sit amet consectetur adipisicing
+          elit. Odio praesentium hic quis officiis unde dolorum perferendis, rem
+          provident velit, est minima! Iusto itaque maiores et! Labore impedit
+          harum eveniet mollitia.
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
+          tempore. Sint totam quas modi in voluptates sit aspernatur nesciunt
+          inventore eius et ex atque beatae tenetur, voluptatibus veniam odit
+          dignissimos? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Labore, odit. Corrupti laudantium incidunt, velit nemo quos molestias
+          voluptas ratione? Laboriosam minus magnam blanditiis odio ipsam,
+          distinctio unde porro voluptatem accusamus!
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
+          tempore. Sint totam quas modi in voluptates sit aspernatur nesciunt
+          inventore eius et ex atque beatae tenetur, voluptatibus veniam odit
+          dignissimos? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Labore, odit. Corrupti laudantium incidunt, velit nemo quos molestias
+          voluptas ratione? Laboriosam minus magnam blanditiis odio ipsam,
+          distinctio unde porro voluptatem accusamus!
+        </p>
+      </article>
+    </main>
+    <script>
+      function clickMenu() {
+        if (itens.style.display == "block") {
+          itens.style.display = "none";
+        } else {
+          itens.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>
